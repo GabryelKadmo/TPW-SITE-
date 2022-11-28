@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylemarca.css">
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Agendamento</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Form">
+            <div>
+                <h1 id="titulo">Agendar consulta</h1>
+                <form action="MarcarConsulta">
+                    <div class="nameinput">
+                        <label for="nameid">Nome Do Paciente</label>
+                        <input type="text" name="name" id="nameid" required>
+                    </div>
+                    <div class="telefoneinput">
+                        <label for="telefoneid">Telefone Pra Contato:</label>
+                        <input type="number" name="telefone" id="number2" required>
+                    </div>
+                    <div class="datainput">
+                        <label for="dataid"> Data Da Consulta:</label>
+                        <input type="date" name="data" id="dataconsulta" required>
+                    </div>
+                    <div class="horarioinput">
+                        <label for="horaid"> Horario Da Consulta:</label>
+                        <input type="time" name="hora" id="horaid" required>
+                    </div>
+                    <!-- <div class="motivoinput">
+                        <label for="motivoid"> Motivo Da Consulta:</label>
+                        <input type="text" name="motivo" id="motivoid" required>
+                    </div> -->
+
+        <div class="motivoinput">
+            <br>
+            <label for="motivoid"><strong>Motivo Da Consulta: </strong></label>
+            <textarea type="text" rows="6" style="width: 26em" id="motivoid" name="motivo"></textarea>
+        </div>
+
+                </form>
+                <div class="confirmar">
+                    <button onclick="_enviar2()" style="width: 150px; height: 50px" id="marcaid">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
